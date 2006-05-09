@@ -8,6 +8,8 @@ Group:		Applications/Mail
 Source0:	http://www.rpcurnow.force9.co.uk/mairix/%{name}-%{version}.tar.gz
 # Source0-md5:	cab61e4e95184541e6b7b4f67dfca3cc
 URL:		http://www.rpcurnow.force9.co.uk/mairix/
+BuildRequires:	bison
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
