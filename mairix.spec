@@ -10,7 +10,6 @@ Source0:	http://www.rpcurnow.force9.co.uk/mairix/%{name}-%{version}.tar.gz
 URL:		http://www.rpcurnow.force9.co.uk/mairix/
 BuildRequires:	bison
 BuildRequires:	flex
-BuildRequires:	texconfig
 BuildRequires:	texinfo-texi2dvi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -63,7 +62,9 @@ Niektóre mo¿liwo¶ci:
 
 %{__make} docs
 
-for i in README NEWS ;do mv dfasyn/$i $i.dfasyn done
+for i in README NEWS ;do 
+	mv dfasyn/$i $i.dfasyn 
+done
 
 %install
 rm -rf $RPM_BUILD_ROOT
