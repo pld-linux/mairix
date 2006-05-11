@@ -2,7 +2,7 @@ Summary:	EMail index and search tool
 Summary(pl):	Narzêdzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
 Version:	0.15.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://www.rpcurnow.force9.co.uk/mairix/%{name}-%{version}.tar.gz
@@ -10,6 +10,8 @@ Source0:	http://www.rpcurnow.force9.co.uk/mairix/%{name}-%{version}.tar.gz
 URL:		http://www.rpcurnow.force9.co.uk/mairix/
 BuildRequires:	bison
 BuildRequires:	flex
+BuildRequires:	texconfig
+BuildRequires:	texinfo-texi2dvi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -56,7 +58,12 @@ Niektóre mo¿liwo¶ci:
 ./configure \
 	--prefix=%{_prefix} \
 	--mandir=%{_mandir}
+
 %{__make}
+
+%{__make} docs
+
+for i in README NEWS ;do mv dfasyn/$i $i.dfasyn done
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -64,11 +71,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install dfasyn/dfasyn $RPM_BUILD_ROOT%{_bindir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README dotmairixrc.eg mairix.txt
+%doc README dotmairixrc.eg ACKNOWLEDGEMENTS  mairix.info mairix.txt mairix.html mairix.dvi mairix.pdf README.dfasyn NEWS.dfasyn
 %attr(755,root,root) %{_bindir}/*
-#%{_mandir}/*/*
