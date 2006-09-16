@@ -53,8 +53,8 @@ Niektóre mo¿liwo¶ci:
 
 %build
 ./configure \
-  --mandir=%{_mandir} \
-  --prefix=%{_prefix}
+	--mandir=%{_mandir} \
+	--prefix=%{_prefix}
 
 %{__make}
 
