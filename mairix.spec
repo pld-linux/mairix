@@ -1,5 +1,5 @@
 Summary:	EMail index and search tool
-Summary(pl.UTF-8):   Narzędzie do indeksowania i przeszukiwania poczty elektronicznej
+Summary(pl.UTF-8):	Narzędzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
 Version:	0.19
 Release:	1
