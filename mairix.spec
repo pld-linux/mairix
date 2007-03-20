@@ -1,5 +1,5 @@
 Summary:	EMail index and search tool
-Summary(pl.UTF-8):	Narzƒôdzie do indeksowania i przeszukiwania poczty elektronicznej
+Summary(pl):	NarzÍdzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
 Version:	0.19
 Release:	1
@@ -30,23 +30,23 @@ Some features:
   tabulates which words occur in which parts (particular headers + body)
   of which messages.
 
-%description -l pl.UTF-8
+%description -l pl
 mairix to program do indeksowania i przeszukiwania poczty
 elektronicznej zapisanej w folderach typu Maildir, MH lub mbox.
 
-Niekt√≥re mo≈ºliwo≈õci:
-- Indeksowanie jest szybkie - program dzia≈Ça przyrostowo na nowych
-  wiadomo≈õciach, a ka≈ºda wiadomo≈õƒá jest skanowana tylko raz w ramach
-  czasu ≈ºycia pliku indeksu.
-- Tryb przeszukiwania wype≈Çnia "wirtualny" folder maildir (lub MH)
-  dowiƒÖzaniami wskazujƒÖcymi na w≈Ça≈õciwe wiadomo≈õci. Folder ten mo≈ºe byƒá
-  normalnie otwierany w programie pocztowym. (Uwaga: je≈õli wiadomo≈õci sƒÖ
-  w folderach mbox, tworzone sƒÖ kopie. Podobnie je≈õli wirtualny folder
-  ma format mbox, jest wype≈Çniany kopiami pasujƒÖcych wiadomo≈õci).
+NiektÛre moøliwo∂ci:
+- Indeksowanie jest szybkie - program dzia≥a przyrostowo na nowych
+  wiadomo∂ciach, a kaøda wiadomo∂Ê jest skanowana tylko raz w ramach
+  czasu øycia pliku indeksu.
+- Tryb przeszukiwania wype≥nia "wirtualny" folder maildir (lub MH)
+  dowi±zaniami wskazuj±cymi na w≥a∂ciwe wiadomo∂ci. Folder ten moøe byÊ
+  normalnie otwierany w programie pocztowym. (Uwaga: je∂li wiadomo∂ci s±
+  w folderach mbox, tworzone s± kopie. Podobnie je∂li wirtualny folder
+  ma format mbox, jest wype≥niany kopiami pasuj±cych wiadomo∂ci).
 - Tryb przeszukiwania jest bardzo szybki.
-- Indeksowanie i przeszukiwanie dzia≈Ça w oparciu o s≈Çowa. Plik indeksu
-  tablicuje kt√≥re s≈Çowa wystƒôpujƒÖ w kt√≥rych czƒô≈õciach (konkretnych
-  nag≈Ç√≥wkach i ciele) kt√≥rych wiadomo≈õci.
+- Indeksowanie i przeszukiwanie dzia≥a w oparciu o s≥owa. Plik indeksu
+  tablicuje ktÛre s≥owa wystÍpuj± w ktÛrych czÍ∂ciach (konkretnych
+  nag≥Ûwkach i ciele) ktÛrych wiadomo∂ci.
 
 %prep
 %setup -q
