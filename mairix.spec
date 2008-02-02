@@ -1,12 +1,12 @@
 Summary:	EMail index and search tool
 Summary(pl.UTF-8):	Narzędzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
-Version:	0.19
+Version:	0.21
 Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/mairix/%{name}-%{version}.tar.gz
-# Source0-md5:	9b384a0fa3431868d5198a7f1882ee69
+# Source0-md5:	821619895931711c370f51f3442a0ded
 URL:		http://www.rc0.org.uk/mairix
 BuildRequires:	bison
 BuildRequires:	flex
