@@ -1,4 +1,5 @@
 Summary:	EMail index and search tool
+Summary(hu.UTF-8):	EMail indexelő és kereső eszköz
 Summary(pl.UTF-8):	Narzędzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
 Version:	0.21
@@ -29,6 +30,24 @@ Some features:
 - Indexing and searching works on the basis of words. The index file
   tabulates which words occur in which parts (particular headers + body)
   of which messages.
+
+%description -l hu.UTF-8
+mairix egy program, amellyel Maildir, MH vagy mbox mappákban tárolt
+email-jeid indexelheted és keresheted.
+
+Néhány lehetőség:
+- Az indexelés gyors. Inkrementálisan fut az új leveleken - minden
+  üzenetet az élete alatt csak egyszer vizsgál át.
+- A keresési mód egy "virtuális" maildir-t (vagy MH-t) hoz létre
+  szimbolikus linkekkel, amelyek a valódi üzenetre mutatnak. Ez a
+  könyvtár általában megnyitható az email programoddal. (Figyelj arra,
+  hogy ha az üzenetek mbox könyvtárakban vannak, másolatok készülnek.
+  Hasonlóan, ha a virtuális könyvtár mbox formátumú, az egyező üzenetek
+  másolataival töltődik fel.)
+- A keresési mód nagyon gyors.
+- Az indexelés és a keresés szó-alapon működik Az index file
+  tabulálja, hogy melyik szó melyik üzenet mely részével (fejlécek +
+  body) egyezik.
 
 %description -l pl.UTF-8
 mairix to program do indeksowania i przeszukiwania poczty
