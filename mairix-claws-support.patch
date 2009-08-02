@@ -10,3 +10,14 @@
          /* NNML (Gnus) */
          has_child_file(path, ".marks") ||
          has_child_file(path, ".overview") ||
+--- mairix-0.21-orig/search.c	2007-06-22 22:18:00.000000000 +0200
++++ mairix-0.21/search.c	2009-08-02 12:13:56.618576447 +0200
+@@ -611,7 +611,7 @@
+   result = new_array(char, len + 1 + sizeof(":2,FRS"));
+   strcpy(result, output_dir);
+   strcat(result, is_in_new ? "/new/" : "/cur/");
+-  sprintf(uniq_buf, "123456789.%d.mairix", token);
++  sprintf(uniq_buf, "1234%d", token);
+   strcat(result, uniq_buf);
+   if (is_seen || is_replied || is_flagged) {
+     strcat(result, ":2,");
