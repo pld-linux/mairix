@@ -3,11 +3,12 @@ Summary(hu.UTF-8):	EMail indexelő és kereső eszköz
 Summary(pl.UTF-8):	Narzędzie do indeksowania i przeszukiwania poczty elektronicznej
 Name:		mairix
 Version:	0.21
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/mairix/%{name}-%{version}.tar.gz
 # Source0-md5:	821619895931711c370f51f3442a0ded
+Patch0:		%{name}-claws-support.patch
 URL:		http://www.rc0.org.uk/mairix
 BuildRequires:	bison
 BuildRequires:	flex
@@ -69,6 +70,7 @@ Niektóre możliwości:
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 ./configure \
