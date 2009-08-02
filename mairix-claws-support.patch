@@ -1,0 +1,12 @@
+--- mairix-0.21-orig/dirscan.c	2007-06-22 22:18:00.000000000 +0200
++++ mairix-0.21/dirscan.c	2009-08-02 11:32:54.901739313 +0200
+@@ -262,6 +262,9 @@
+         /* Sylpheed */
+         has_child_file(path, ".sylpheed_cache") ||
+         has_child_file(path, ".sylpheed_mark") ||
++		/* Claws-mail */
++		has_child_file(path, ".claws_cache") ||
++		has_child_file(path, ".claws_mark") ||
+         /* NNML (Gnus) */
+         has_child_file(path, ".marks") ||
+         has_child_file(path, ".overview") ||
